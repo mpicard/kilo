@@ -44,6 +44,7 @@ enum editorHighlight {
   HL_MLCOMMENT,
   HL_KEYWORD1,
   HL_KEYWORD2,
+  HL_KEYWORD3,
   HL_STRING,
   HL_NUMBER,
   HL_MATCH
@@ -109,9 +110,9 @@ char *PY_HL_keywords[] = {
   "and", "as", "assert", "break", "continue", "def", "del", "elif", "else",
   "except", "exec", "finally", "for", "from", "global", "if", "import", 
   "in", "is", "lambda", "not", "or", "pass", "print", "raise", "return",
-  "try", "while", "with", "yield" 
+  "try", "while", "with", "yield",
 
-  "class|", NULL
+  "class|", "self|", "__init__|", "repr|", NULL
 };
 
 struct editorSyntax HLDB[] = {
